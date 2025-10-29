@@ -1,0 +1,133 @@
+css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 15px;
+}
+
+.header h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.header .ra {
+    color: #666;
+    font-size: 14px;
+}
+
+.comparison-section {
+    margin-bottom: 25px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #f8f9fa;
+    border-left: 4px solid #667eea;
+}
+
+.comparison-section h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.numbers-display {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+}
+
+.result {
+    font-weight: bold;
+    color: #2c5530;
+    margin: 5px 0;
+}
+
+.result.true {
+    color: #28a745;
+}
+
+.result.false {
+    color: #dc3545;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#startBtn {
+    background: #667eea;
+    color: white;
+}
+
+#startBtn:hover {
+    background: #5a6fd8;
+    transform: translateY(-2px);
+}
+
+#resetBtn {
+    background: #6c757d;
+    color: white;
+}
+
+#resetBtn:hover {
+    background: #5a6268;
+    transform: translateY(-2px);
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+    font-size: 12px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+    
+    .buttons {
+        flex-direction: column;
+    }
+}
